@@ -1,27 +1,43 @@
-# Shell-React-Express
+# SmartMart
 
-React-Express Shell app ready for node deployment to Heroku or other similar platforms.  React and Express code are separate mini-projects and build/deployment is handled by the top level package.json
+## Introduction
+SmartMart is an ecommerce site with an advanced search feature incorporating AI. With minimalist design created with Tailwind CSS, the site is simple to navigate and has robust functionality. The search feature incorporates AlogoliaSearch API and GPT-3.5-Turbo to attempt to analysis natural language and suggest relevant products.
 
-When the React App starts, it makes a single API call to the API server for the version number and renders that, or an error if API call was unsucessful
+This app was created by Bastien Moy, and Zhihao Qiu as a final project for the Lighthouse Labs Web Development bootcamp.
 
-### Built for node 16
+## Getting Started
 
-Copy `env.example` to `.env` to override the default env values
+1. Create the `.env` in backend by using `.env.example` as a reference: `cp .env.example .env`
+2. Install dependencies: `npm i`
+3. Start as Single App:
 
-### Starting as a Single App (for Production only)
 ```
 npm install
 npm run build
 npm start
 ```
 
-### Starting as Individual Apps (for Development)
-```
-cd backend
-npm install
-npm run local
+## Dependencies
+- Node 15.x or above
+- React 18.x or above
+- React Router
+- Tailwind CSS
+- AlgoliaSearch
+- Stripe
 
-cd frontend
-npm install
-npm start
-```
+## Screenshots
+
+### Home page
+!["Screenshot of home page"](docs/home-page.PNG)
+
+### Product List
+!["Screenshot of product list"](docs/product-list.PNG)
+
+### Cart Modal
+!["Screenshot of cart modal"](docs/cart-modal.PNG)
+
+### Order Details
+!["Screenshot of order details"](docs/order-details.PNG)
+
+### Payment Confirmation
+!["Screenshot of payment confirmation"](docs/payment-details.PNG)
